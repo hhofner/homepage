@@ -1,0 +1,48 @@
+@font-face {
+	font-family: Cascadia;
+	src: url('/CascadiaCode.woff2') format('woff2');
+	font-display: swap;
+}
+
+html {
+}
+
+body {
+	margin: 0 auto;
+	max-width: 750px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	font-family: Cascadia, monospace;
+
+	padding: 5px;
+}
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.section-reader {
+	background: #ffffff6b;
+  padding: 10px;
+  border-radius: 15px;
+  border: #adadad40 3px solid;
+}
+
+.app-logo {
+	width: 65px;
+	border-radius: 15px;
+}
+
+@media (max-width: 512px) {
+	#projects {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
