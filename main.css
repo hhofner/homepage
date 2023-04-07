@@ -5,9 +5,11 @@
 }
 
 html {
+	background: #80a47b;
 }
 
 body {
+	box-sizing: border-box;
 	margin: 0 auto;
 	max-width: 750px;
 
@@ -18,6 +20,24 @@ body {
 	font-family: Cascadia, monospace;
 
 	padding: 5px;
+	overflow: hidden;
+	overflow-y: scroll;
+	padding: 0 1rem;
+}
+
+p {
+	margin: 0;
+}
+
+.title {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.title > a > svg {
+	color: #0d130dc2;
+	cursor: pointer;
 }
 
 #projects {
@@ -27,9 +47,40 @@ body {
 }
 
 .section-reader {
-	background: #ffffff6b;
+}
+
+.project {
+	padding: 0.5rem;
+	position: relative;
   border-radius: 15px;
   border: #adadad40 3px solid;
+  box-shadow: inset 5px 5px 20px rgba(255,255,255,0.1);
+  overflow: hidden;
+  background: -webkit-linear-gradient(top,rgba(255,255,255,0.1),transparent);
+}
+
+.project > p {
+	margin-bottom: 1rem;
+}
+
+.shine {
+  width: 1000px;
+  height: 100px;
+  margin-left: -100px;
+  transform: rotate(30deg);
+  background: -webkit-linear-gradient(top, transparent, rgba(200,200,200,0.1),transparent);
+  position: absolute;
+  animation: shine 6s ease-in-out infinite;
+}
+
+@keyframes shine{
+  0%,100%{
+    margin-top: -100px;
+    
+  }
+  50%{
+    margin-top: 800px;
+  }
 }
 
 .app-logo {
