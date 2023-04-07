@@ -26,7 +26,14 @@ body {
 }
 
 p {
-	margin: 0;
+}
+
+img {
+	width: 75px;
+}
+
+a:visited {	
+	color: #0d130dc2;
 }
 
 .title {
@@ -38,6 +45,19 @@ p {
 .title > a > svg {
 	color: #0d130dc2;
 	cursor: pointer;
+}
+
+.title > a {
+	display: contents;
+}
+
+.links > a {
+	display: contents;
+}
+
+.links > a > svg {
+	width: 28px;
+	height: 28xp;
 }
 
 #projects {
