@@ -12,7 +12,6 @@ body {
 	max-width: 750px;
 
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 
@@ -29,7 +28,6 @@ body {
 
 .section-reader {
 	background: #ffffff6b;
-  padding: 10px;
   border-radius: 15px;
   border: #adadad40 3px solid;
 }
