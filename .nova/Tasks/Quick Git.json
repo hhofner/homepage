@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "git add .\ngit commit -a --allow-empty-message -m ''\ngit push\n\necho \"All changes have been successfully added, committed, and pushed.\""
+    }
+  },
+  "openLogOnRun" : "finish"
+}
